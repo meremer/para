@@ -1,0 +1,114 @@
+.admin-dashboard {
+  background: #1a1a1a;
+  border-radius: 0;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+  border: 2px solid #333;
+}
+
+.admin-dashboard h1 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.section {
+  background: #000000;
+  padding: 1.5rem;
+  border-radius: 0;
+  border: 2px solid #333;
+}
+
+.section h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.club-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.club-card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid #333;
+}
+
+.club-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.club-card.selected {
+  border-color: #ffffff;
+  background: #000000;
+}
+
+.club-card h3 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.club-card p {
+  color: #999;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.section input,
+.section select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid #333;
+  border-radius: 0;
+  font-size: 0.95rem;
+  background: #000000;
+  color: #ffffff;
+}
+
+.section input:focus,
+.section select:focus {
+  outline: none;
+  border-color: #ffffff;
+}
+
+.section button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.section button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.button-group button {
+  width: 100%;
+}

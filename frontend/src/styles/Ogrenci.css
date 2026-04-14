@@ -1,0 +1,72 @@
+.ogrenci-dashboard {
+  background: #1a1a1a;
+  border-radius: 0;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+  border: 2px solid #333;
+}
+
+.ogrenci-dashboard h1 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.total-value {
+  background: #000000;
+  color: white;
+  padding: 2rem;
+  border-radius: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+  border: 2px solid #ffffff;
+}
+
+.total-value h2 {
+  font-size: 2rem;
+}
+
+.wallet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.currency-card {
+  background: #000000;
+  padding: 1.5rem;
+  border-radius: 0;
+  border: 2px solid #333;
+  transition: all 0.3s;
+}
+
+.currency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.currency-card h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.currency-info p {
+  margin: 0.5rem 0;
+  color: #999;
+}
+
+.currency-info .total {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid #333;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.empty-wallet {
+  text-align: center;
+  color: #666;
+  padding: 3rem;
+  font-size: 1.1rem;
+}

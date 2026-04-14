@@ -1,0 +1,43 @@
+.kulup-dashboard {
+  background: #1a1a1a;
+  border-radius: 0;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+  border: 2px solid #333;
+}
+
+.kulup-dashboard h1 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.info-card {
+  background: #000000;
+  padding: 1.5rem;
+  border-radius: 0;
+  border: 2px solid #ffffff;
+}
+
+.info-card p {
+  margin: 0.75rem 0;
+  color: #cccccc;
+  font-size: 1rem;
+}
+
+.info-card strong {
+  color: #ffffff;
+}
+
+.student-list {
+  display: grid;
+  gap: 0.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.student-item {
+  background: #000000;
+  padding: 0.75rem;
+  border-radius: 0;
+  border: 1px solid #333;
+}
