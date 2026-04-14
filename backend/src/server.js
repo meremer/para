@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 
 const initDatabase = require('./config/initDb');
@@ -15,15 +16,20 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/kulup', kulupRoutes);
 app.use('/api/ogrenci', ogrenciRoutes);
 app.use('/api/kantinci', kantinciRoutes);
 
-app.get('/', (req, res) => {
-  res.json({ mesaj: 'Endex API çalışıyor' });
+// Serve static files from React build
+const frontendBuildPath = path.join(__dirname, '../../frontend/build');
+app.use(express.static(frontendBuildPath));
+
+// Serve React app for all non-API routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(frontendBuildPath, 'index.html'));
 });
 
 // Veritabanını başlat ve sunucuyu çalıştır
